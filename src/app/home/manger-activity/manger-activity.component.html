@@ -10,7 +10,7 @@
     <div class="ui divider"></div>
     <!-- Options For Chart  -->
     <div class="displayColumn container mangerDemo">
-      <div class="ui dropdown round basic button">
+      <div class="ui dropdown round selection basic button">
         <div class="text" >February</div>
         <input type="hidden" name="mon" (change)="calcMonthData($event)">
         <i class="angle down  icon floatRight"></i>
@@ -18,7 +18,7 @@
           <div class="item" *ngFor="let month of months" >{{month}}</div>
         </div>
       </div>
-      <div class="ui dropdown round basic button">
+      <div class="ui dropdown round basic selection button">
           <div class="text">Incoming Phone Calls</div>
           <input type="hidden" name="typeCall" (change)="calcMonthDataWithCallType($event)">
           <i class="angle down  icon floatRight"></i>

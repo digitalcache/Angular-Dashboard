@@ -1,0 +1,87 @@
+/* Sidebar  css*/
+.clearFloat{
+    clear: both;
+}
+.floatRight{
+    float:right !important;
+}
+.infoStyle{
+    text-align: left;
+    font-size: 1.2em;
+}
+.brStyle{
+    line-height:1.2em;
+}
+.paddingZero{
+    padding:0 !important;
+}
+.menuHeader{
+    opacity: 0.5;
+    padding-left:1.2em !important;
+    padding-top:1em !important;
+}
+.dropDown{
+    float:right !important; 
+    transform: translateY(-5px);
+}
+.paddingLeftDrop{
+    padding-left:1.1em !important;
+}
+.paddingLeftMessages{
+    padding-left:1.1em !important;
+    padding-top: 1em !important;
+}
+.marginRightMessage{
+    margin-right: 0.5em !important;
+}
+.dropMenu .item{
+    text-align: left;
+    padding:0;
+    margin:0;
+}
+.dropMenu .items{
+    margin:0;
+}
+.main-menu{
+    font-size:1.1em;
+}
+.main-menu .item{
+    padding:0.6em 0;
+}
+.main-menu i{
+    margin-right:10px;
+}
+.main-menu .active{
+    border-left: 2px solid red;
+}
+.cursorPointer{
+    cursor: pointer;
+}
+/* Sidebar  css */
+
+/* Content Container css */
+.borderRadiusZero{
+    border-radius: 0;
+}
+.marginLeftSearch{
+    margin-left: 10px !important;
+}
+.searchHolder{
+    width:75vw; 
+    height:auto;
+}
+
+
+/* Content Container css */
+
+
+
+
+
+
+
+
+
+
+
+

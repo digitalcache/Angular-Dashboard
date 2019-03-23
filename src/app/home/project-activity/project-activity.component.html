@@ -1,0 +1,79 @@
+<div class="ui segment segmentReset projectMain">
+  <!-- Top Toolbar -->
+    <div>
+        <h1 class="ui header marginContent">Project Activity</h1>
+        <div class="floatRight">
+            <i class="minus icon grey" (click)="minObject()"></i>
+            <i class="close icon grey" (click)="removeObject()"></i>
+        </div>
+    </div>
+    <div class="ui divider"></div>
+    <!-- Options For Chart  -->
+    <div class="displayColumn container projectDemo">
+      <div class="ui dropdown round basic selection button">
+        <div class="text">Month</div>
+        <input type="hidden" name="mon" (change)="calcMonthData($event)">
+        <i class="angle down  icon floatRight"></i>
+        <div class="menu">
+          <div class="item" *ngFor="let month of months">{{month}}</div>
+        </div>
+      </div>
+      <div class="ui basic round button multiple search selection dropdown rangeSelector">
+        <input type="hidden" name="day" (change)="calcDays($event)">
+        <div class="default text">Range</div>
+        <i class="angle down icon floatRightRange"></i>
+        <div class="menu">
+            <div class="item" data-value="1">1</div>
+            <div class="item" data-value="2">2</div>
+            <div class="item" data-value="3">3</div>
+            <div class="item" data-value="4">4</div>
+            <div class="item" data-value="5">5</div>
+            <div class="item" data-value="6">6</div>
+            <div class="item" data-value="7">7</div>
+            <div class="item" data-value="8">8</div>
+            <div class="item" data-value="9">9</div>
+            <div class="item" data-value="10">10</div>
+            <div class="item" data-value="11">11</div>
+            <div class="item" data-value="12">12</div>
+            <div class="item" data-value="13">13</div>
+            <div class="item" data-value="14">14</div>
+            <div class="item" data-value="15">15</div>
+            <div class="item" data-value="16">16</div>
+            <div class="item" data-value="17">17</div>
+            <div class="item" data-value="18">18</div>
+            <div class="item" data-value="19">19</div>
+            <div class="item" data-value="20">20</div>
+            <div class="item" data-value="21">21</div>
+            <div class="item" data-value="22">22</div>
+            <div class="item" data-value="23">23</div>
+            <div class="item" data-value="24">24</div>
+            <div class="item" data-value="25">25</div>
+            <div class="item" data-value="26">26</div>
+            <div class="item" data-value="27">27</div>
+            <div class="item" data-value="28">28</div>
+            <div class="item" data-value="29">29</div>
+            <div class="item" data-value="30">30</div>
+        </div>
+        
+        </div>
+        <div class="ui dropdown round blue button" (click)="toggleLast()">
+          <div class="text">Last</div>
+        </div>
+        <div class="ui dropdown round red button" (click)="toggleCurrent()">
+          <div class="text">Current</div>
+        </div>
+        <div class="ui round basic button floatRight todayFix" (click)="calcToday()">Today</div>
+        <!-- Chart Holder-->
+            <div style="margin-top:10px;">
+              <canvas id="goodCanvas1" style="display:block;" aria-label="Manger's Activity" role="img" baseChart
+                [datasets]="lineChartData"
+                [labels]="lineChartLabels"
+                [colors]="lineChartColors"
+                [options]="lineChartOptions"
+                [plugins]="lineChartPlugins"
+                [legend]="lineChartLegend"
+                [chartType]="lineChartType">
+              </canvas>
+            </div>
+    </div>  
+</div>

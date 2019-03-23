@@ -1,0 +1,152 @@
+[
+  {
+    "calls": 160,
+    "outgoing": 80,
+    "incoming": 80
+  },
+  {
+    "calls": 177,
+    "outgoing": 87,
+    "incoming": 90
+  },
+  {
+    "calls": 49,
+    "outgoing": 42,
+    "incoming": 7
+  },
+  {
+    "calls": 244,
+    "outgoing": 89,
+    "incoming": 155
+  },
+  {
+    "calls": 152,
+    "outgoing": 47,
+    "incoming": 105
+  },
+  {
+    "calls": 611,
+    "outgoing": 305,
+    "incoming": 306
+  },
+  {
+    "calls": 1179,
+    "outgoing": 605,
+    "incoming": 574
+  },
+  {
+    "calls": 484,
+    "outgoing": 205,
+    "incoming": 279
+  },
+  {
+    "calls": 761,
+    "outgoing": 305,
+    "incoming": 456
+  },
+  {
+    "calls": 427,
+    "outgoing": 205,
+    "incoming": 222
+  },
+  {
+    "calls": 81,
+    "outgoing": 55,
+    "incoming": 26
+  },
+  {
+    "calls": 686,
+    "outgoing": 305,
+    "incoming": 381
+  },
+  {
+    "calls": 643,
+    "outgoing": 305,
+    "incoming": 338
+  },
+  {
+    "calls": 1188,
+    "outgoing": 565,
+    "incoming": 623
+  },
+  {
+    "calls": 546,
+    "outgoing": 291,
+    "incoming": 255
+  },
+  {
+    "calls": 319,
+    "outgoing": 164,
+    "incoming": 155
+  },
+  {
+    "calls": 904,
+    "outgoing": 403,
+    "incoming": 403
+  },
+  {
+    "calls": 54,
+    "outgoing": 25,
+    "incoming": 29
+  },
+  {
+    "calls": 801,
+    "outgoing": 101,
+    "incoming": 705
+  },
+  {
+    "calls": 568,
+    "outgoing": 255,
+    "incoming": 313
+  },
+  {
+    "calls": 615,
+    "outgoing": 255,
+    "incoming": 360
+  },
+  {
+    "calls": 964,
+    "outgoing": 505,
+    "incoming": 459
+  },
+  {
+    "calls": 136,
+    "outgoing": 105,
+    "incoming": 31
+  },
+  {
+    "calls": 932,
+    "outgoing": 505,
+    "incoming": 471
+  },
+  {
+    "calls": 588,
+    "outgoing": 255,
+    "incoming": 333
+  },
+  {
+    "calls": 167,
+    "outgoing": 105,
+    "incoming": 62
+  },
+  {
+    "calls": 148,
+    "outgoing": 95,
+    "incoming": 53
+  },
+  {
+    "calls": 144,
+    "outgoing": 15,
+    "incoming": 129
+  },
+  {
+    "calls": 21,
+    "outgoing": 6,
+    "incoming": 15
+  },
+  {
+    "calls": 505,
+    "outgoing": 255,
+    "incoming": 250
+  }
+]

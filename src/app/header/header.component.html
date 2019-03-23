@@ -1,0 +1,109 @@
+<!-- Sidebar menu -->
+<sm-sidebar class="left tiny vertical inverted labeled icon menu" #invertedSidebar>        
+  <!-- Sidebar header -->
+  <div class="item header">
+    <a routerLink="/"><h3 style="float:left;">BUVUD</h3></a>
+    <!-- Click on the burger icon to hide the sidebar -->
+    <div class="ui logo icon image floatRight cursorPointer" (click)="invertedSidebar.show()" (click)="sidebarVisible()">
+      <i class="bars icon"></i>
+    </div>
+    <div class="clearFloat"></div>
+  </div>
+  <!-- Sidebar personal info area -->
+  <a class="item card" >
+    <div class="content">
+      <img class="left floated mini ui circular image" src="https://i0.wp.com/therighthairstyles.com/wp-content/uploads/2014/03/1-short-choppy-bob-for-square-face.jpg?zoom=2.625&resize=392%2C403&ssl=1">
+      <div class="header infoStyle">
+        Jack
+        <br class="brStyle">
+        Williams
+      </div>
+      <div class="clearFloat"></div>
+    </div>
+  </a>
+  <!-- Sidebar Main Menu -->
+  <div class="item dropMenu paddingZero">
+    <div class="ui items">
+      <div class="item menuHeader" (click)="collapse = !collapse">
+        Main<i class="angle down icon dropDown"></i>
+      </div>
+      <div [suiCollapse]="collapse" class="ui items main-menu">
+            <a routerLink="/home" routerLinkActive="active" class="item  paddingLeftDrop">
+              <i class="fa fa-home"></i>Home
+            </a>
+            <a routerLink="/projects" routerLinkActive="active" class="item paddingLeftDrop">
+                <i class="fa fa-folder-o"></i>Projects
+            </a>
+            <a routerLink="/messages" routerLinkActive="active" class="item paddingLeftDrop">
+                <i class="fa fa-comment"></i>Messages<a class="ui tiny red label circular marginRightMessage">1</a>
+            </a>
+            <a routerLink="/analytics" routerLinkActive="active" class="item paddingLeftDrop">
+                <i class="fa fa-bar-chart"></i>Analytics
+            </a>
+            <a routerLink="/tasks" routerLinkActive="active" class="item paddingLeftDrop">
+                <i class="fa fa-tasks"></i>Tasks
+            </a>
+            <a routerLink="/calender" routerLinkActive="active" class="item paddingLeftDrop">
+                <i class="fa fa-calendar"></i>Calender
+            </a>
+            <a routerLink="/layout" routerLinkActive="active" class="item paddingLeftDrop">
+                <i class="fa fa-home"></i>Layout
+            </a>
+            <a routerLink="/accounts" routerLinkActive="active" class="item paddingLeftDrop">
+                <i class="fa fa-users"></i>Accounts
+            </a>
+      </div>
+    </div></div>
+    <!-- Sidebar More Menu -->
+  <div class="item dropMenu paddingZero">
+      <div class="ui items">
+        <div class="item menuHeader" (click)="collapse_more = !collapse_more">
+          More<i class="angle down icon dropDown"></i>
+        </div>
+        <div [suiCollapse]="collapse_more" class="ui items main-menu">
+              <a routerLink="/payments"  class="item paddingLeftDrop" routerLinkActive="active">
+                <i class="fa fa-credit-card"></i>Payments
+              </a>
+              <a routerLink="/directory"  class="item paddingLeftDrop" routerLinkActive="active">
+                  <i class="fa fa-sitemap"></i>Directory
+              </a>
+              <a  routerLink="/library" class="item paddingLeftDrop" routerLinkActive="active">
+                  <i class="fa fa-database"></i>Library
+              </a>
+              <a routerLink="/help"  class="item paddingLeftDrop" routerLinkActive="active">
+                  <i class="fa fa-question-circle"></i>Help
+              </a>
+    </div></div></div>
+</sm-sidebar>
+
+<!-- Content Container -->
+<div class="content-main">
+      <div class="ui icon menu borderless borderRadiusZero">
+        <!-- Click on the burger icon to show the sidebar -->
+          <a class="ui black launch right top attached fixed button" (click)="invertedSidebar.show()" (click)="sidebarInvisible()">
+              <i class="fitted large content icon"></i>
+          </a>
+          <!-- Search holder -->
+          <div class="ui  transparent left icon input marginLeftSearch">
+              <i class="fitted search icon" ></i>
+              <input class="searchHolder" type="text" placeholder="Search...">
+            </div>
+            <!-- SideSearch options -->
+            <div class="right menu rightMenu" >
+                <a class="item">
+                    <i class="large fitted cog icon"></i>
+                </a>
+                <a class="item">
+                    <i class="large fitted bell outline icon"></i>
+                </a>
+                <a class="item">
+                    <i class="large fitted lock icon"></i>
+                </a>
+</div></div>
+
+<!-- Main Content Controlled from menu -->
+
+<router-outlet></router-outlet>
+  
+
+</div>

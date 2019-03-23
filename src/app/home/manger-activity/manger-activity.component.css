@@ -1,0 +1,46 @@
+.segmentReset{
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    width:70vw;
+}
+.displayColumn{
+    padding:0 1em;
+}
+.displayColumn .button{
+    margin-left:10px !important;
+}
+@media only screen and (max-width: 800px) {
+    .segmentReset{
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+        width:90vw;
+        margin:10px auto !important;  
+    }
+    .displayColumn{
+        display:flex;
+        flex-direction: column;
+        padding:0 10px;
+    }
+    .displayColumn > div , b{
+        
+        margin-top:10px !important;
+    }
+}
+.floatRight{
+    float:right;
+    padding-left:15px;
+}
+.marginContent{
+    margin:1em;
+    font-size:14px !important;
+    display:inline;
+}
+.round{
+    border-radius: 500rem !important;
+}
+.marginLeft{
+    margin-left: 15px ;
+}
+.activityAmount{
+    float: right;margin-right:10px;
+}

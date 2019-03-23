@@ -1,0 +1,50 @@
+.segmentReset{
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+.displayColumn{
+    padding:0 1em;
+}
+.displayColumn .button{
+    margin-left:10px !important;
+}
+.displayColumn .todayFix{
+    padding-left:20px !important;
+}
+@media only screen and (max-width: 800px) {
+    .segmentReset{
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+        width:90vw;
+        margin:10px auto !important;  
+    }
+}
+@media only screen and (max-width: 800px) {
+  
+    .displayColumn{
+        display:flex;
+        flex-direction: column;
+        /* padding:0 10px; */
+    }
+    .displayColumn > div{
+        
+        margin-top:10px !important;
+    }
+}
+.floatRight{
+    padding-left:15px;
+    float:right;
+}
+.floatRightRange{
+    padding-top:8px;
+    padding-left:15px;
+    float: right;
+}
+.marginContent{
+    margin:1em;
+    font-size:14px !important;
+    display:inline;
+}
+.round{
+    border-radius: 500rem !important;
+}

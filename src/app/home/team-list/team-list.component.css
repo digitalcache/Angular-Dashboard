@@ -1,0 +1,57 @@
+/* Team List CSS */
+.sizeImage{
+    height:50px !important;
+    width:50px !important;
+    border-radius: 500rem;
+}
+.contentFlex{
+    display:flex !important;
+    flex-direction: row;
+}
+.header{
+    font-size: 1em !important;
+}
+.description{
+    font-size: 0.8em !important;
+    color:grey !important;
+}
+.marginCenter{
+    display: flex;
+    justify-content: center;
+}
+.item{
+    margin-top:0 !important;
+    margin-bottom:10px !important;
+}
+.round{
+    border-radius: 500rem;
+}
+.marginContent{
+    margin:1em;
+    display:inline;
+}
+.segmentReset{
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    width:300px;
+}
+@media only screen and (max-width: 800px) {
+    .segmentReset{
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+        width:90vw;
+        margin:0 auto;  
+    }
+}
+.floatRight{
+    float:right;
+}
+.paddingLeft{
+    padding-left: 1em !important;
+}
+.descStyle{
+    color:#808080;
+    font-size:0.8em;
+    font-weight: lighter;
+}
+/* Team List CSS */

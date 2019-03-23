@@ -1,0 +1,47 @@
+<div class="ui segment segmentReset activityMain">
+  <!-- Top Toolbar -->
+    <div>
+        <h1 class="ui header marginContent">Manger's Activity</h1>
+        <div class="floatRight">
+            <i class="minus icon grey" (click)="minObject()"></i>
+            <i class="close icon grey" (click)="removeObject()"></i>
+        </div>
+    </div>
+    <div class="ui divider"></div>
+    <!-- Options For Chart  -->
+    <div class="displayColumn container mangerDemo">
+      <div class="ui dropdown round basic button">
+        <div class="text" >February</div>
+        <input type="hidden" name="mon" (change)="calcMonthData($event)">
+        <i class="angle down  icon floatRight"></i>
+        <div class="menu">
+          <div class="item" *ngFor="let month of months" >{{month}}</div>
+        </div>
+      </div>
+      <div class="ui dropdown round basic button">
+          <div class="text">Incoming Phone Calls</div>
+          <input type="hidden" name="typeCall" (change)="calcMonthDataWithCallType($event)">
+          <i class="angle down  icon floatRight"></i>
+          <div class="menu">
+            <div class="item">All Calls</div>
+            <div class="item">Outgoing Phone Calls</div>
+            <div class="item">Incoming Phone Calls</div>
+          </div>
+        </div>
+        <b style="float: right;margin-right:10px;">Total: <span style="color:red;">{{total}}</span></b>
+          <div>
+            <div>
+              <!-- Chart Holder-->
+              <canvas style="display: block;" aria-label="Manger's Activity" role="img" baseChart
+                [datasets]="barChartData"
+                [labels]="barChartLabels"
+                [options]="barChartOptions"
+                [colors]="barChartColors"
+                [plugins]="barChartPlugins"
+                [legend]="barChartLegend"
+                [chartType]="barChartType">
+              </canvas>
+            </div>
+          </div>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+<div class="ui segment segmentReset teamMain">
+  <div>
+          <h1 class="ui header marginContent">Involved Team</h1>
+          <div class="floatRight">
+              <i class="minus icon grey" (click)="minObject()"></i>
+              <a class="item" (click)="removeObject()"><i class="close icon grey"></i></a>
+          </div>
+  </div>
+  <div class="ui divider"></div>
+  <div class="ui relaxed items marginContent "  *ngIf="displayTeam">
+     <!-- Dynamically adding data using Angular -->
+      <div class="item paddingLeft" *ngFor="let team of teams">
+        <div class="content">
+              <img class="left floated mini ui circular image" src="https://i0.wp.com/therighthairstyles.com/wp-content/uploads/2014/03/1-short-choppy-bob-for-square-face.jpg?zoom=2.625&resize=392%2C403&ssl=1">
+              <div class="header">
+                  {{team.name}}<br>
+                <span class="descStyle">{{team.description}}</span>
+              </div>
+            </div>
+          </div>
+          <div class="marginCenter">
+              <button class="ui positive button round" (click)="addMember()">Add Teammate<i class="plus icon right floated"></i></button>
+          </div>
+  </div>
+  
+</div>
+    
+
